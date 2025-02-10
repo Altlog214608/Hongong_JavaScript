@@ -7,9 +7,25 @@
     <link rel="stylesheet" href="lastwar.css" />
   </head>
   <body>
-    <div class="game-container">
+    <div id="start_screen" class="title">
+      <div id="btn-box">
+        <button type="button" id="start_button">게임 시작</button>
+        <input type="text" id="text_box" placeholder="이름을 입력하세요"></input>
+      </div>
+    </div>
+    <div id="result_screen">
+      <!-- <div id="result_text">랭킹</div> -->
+      <h3>랭킹</h3>
+      <ol id="ranking">
+        
+      </ol>
+      <button type="button" id="restart_button">다시 시작</button>
+    </div>
+    <div id="game_screen" class="game-container" style="display: none">
       <canvas id="gameCanvas"></canvas>
     </div>
     <script type="text/javascript" src="lastwar.js"></script>
   </body>
 </html>
+<!-- 
+공속 = 공격주기, 데미지, 화염방사기 -->
